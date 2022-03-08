@@ -15,6 +15,6 @@ Fundwise mengeliminasi pain point pengguna dari yang sebelumnya perlu untuk mela
 
 ## **Sakukurata Kurabataka**  
 Ketua Kelompok:  Aswan Zakky Mukhtarom - 19/439810/TK/48540     
-Anggota 1:  
+Anggota 1:  Agustina Asmoro Putri - 19/439805/TK/48535
 Anggota 2:  Aldo Arya Saka Mukti - 19/439087/TK/48537  
 Anggota 3:  Rahma Maesarah - 19/439820/TK/48550
