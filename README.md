@@ -17,4 +17,4 @@ Fundwise mengeliminasi pain point pengguna dari yang sebelumnya perlu untuk mela
 Ketua Kelompok:  
 Anggota 1:  
 Anggota 2:  
-Anggota 3:  
+Anggota 3: Rahma Maesarah - 19/439820/TK/48550  
