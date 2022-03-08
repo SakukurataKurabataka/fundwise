@@ -16,5 +16,5 @@ Fundwise mengeliminasi pain point pengguna dari yang sebelumnya perlu untuk mela
 ## **Sakukurata Kurabataka**  
 Ketua Kelompok:  Aswan Zakky Mukharom - 19/439810/TK/48540    
 Anggota 1:  
-Anggota 2:   
+Anggota 2:  
 Anggota 3:  
