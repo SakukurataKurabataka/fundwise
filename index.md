@@ -41,3 +41,28 @@ Analisis Kompetitor (Minimal 3 Kompetitor)
 ![image](https://user-images.githubusercontent.com/60910170/157212225-8dd8ff52-b579-4fb0-a3e1-07485a70c587.png)
 ![image](https://user-images.githubusercontent.com/60910170/157212247-8874171e-529c-45e2-9356-05dc6a9217d7.png)
 
+<hr/>
+  
+## Lab 2.3
+### Metodologi SDLC
+1. Metodologi yang Digunakan: Agile
+2. Alasan Pemilihan:
+   - Pembagian tugas dapat lebih jelas dan dikontrol
+   - Fleksibel, pengerjaan bisa dipecah sesuai tim dan mengikuti proses perkembangan
+   - Lebih mudah melakukan revisi dalam skala yang lebih kecil
+   - Estimasi waktu pengerjaan lebih cepat dibandingkan metode lain, sehingga waktu rilis menjadi lebih cepat juga
+  
+### Perancangan Tahap 1-3 SDLC  
+1. Tujuan dari produk:    
+  Mengeliminasi pain point pengguna dari yang sebelumnya perlu untuk melakukan input data manual menjadi otomatis dengan cara melakukan scan nota  
+2. Pengguna potensial dari produk dan kebutuhan para pengguna tersebut:    
+  Financial planner, masyarakat yang melek finansial, anak muda
+3. Use Case Diagram:    
+  ![image](https://user-images.githubusercontent.com/60910170/158161451-bd8821fd-e68b-40a2-bbc3-b5ea67c65569.png)
+4. Functional requirements untuk use case yang telah dirancang:    
+  ![image](https://user-images.githubusercontent.com/60910170/158161596-e1dfbd06-1c1e-4a35-bf8f-9f00f95f45a7.png)
+5. ERD:  
+  ![image](https://user-images.githubusercontent.com/60910170/158161665-7a1e4a8c-465f-4814-ac3a-4cde6d3a9e4e.png)
+6. Low Fidelity Prototype
+7. Gantt Chart:  
+  ![image](https://user-images.githubusercontent.com/60910170/158161759-33271add-f897-46e7-9fd7-3daa9173b78f.png)
