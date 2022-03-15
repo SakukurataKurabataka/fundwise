@@ -58,11 +58,17 @@ Analisis Kompetitor (Minimal 3 Kompetitor)
 2. Pengguna potensial dari produk dan kebutuhan para pengguna tersebut:    
   Financial planner, masyarakat yang melek finansial, anak muda
 3. Use Case Diagram:    
-  ![image](https://user-images.githubusercontent.com/60910170/158161451-bd8821fd-e68b-40a2-bbc3-b5ea67c65569.png)
-4. Functional requirements untuk use case yang telah dirancang:    
+  ![image](https://user-images.githubusercontent.com/60910170/158376320-a5881bc5-4042-4504-85c1-e491a82bcdbf.png)  
+5. Functional requirements untuk use case yang telah dirancang:    
   ![image](https://user-images.githubusercontent.com/60910170/158161596-e1dfbd06-1c1e-4a35-bf8f-9f00f95f45a7.png)
 5. ERD:  
   ![image](https://user-images.githubusercontent.com/60910170/158161665-7a1e4a8c-465f-4814-ac3a-4cde6d3a9e4e.png)
-6. Low Fidelity Prototype
-7. Gantt Chart:  
+6. Low Fidelity Prototype:  
+  ![image](https://user-images.githubusercontent.com/60910170/158376478-ac4f4527-07ad-4b6c-8306-bc6aae2f35fa.png)
+  ![image](https://user-images.githubusercontent.com/60910170/158376509-fdd99bf9-08c7-4f7c-9f6c-2ab6bb833002.png)
+  ![image](https://user-images.githubusercontent.com/60910170/158376540-e2cbc3eb-b856-48f9-bd20-6c54e9b55ab1.png)
+  ![image](https://user-images.githubusercontent.com/60910170/158376576-a4528606-17ee-4ff5-beb8-8eac3a7e6b93.png)
+  ![image](https://user-images.githubusercontent.com/60910170/158376596-eae3c170-752c-4579-8d83-f26b1bafb43a.png)
+  ![image](https://user-images.githubusercontent.com/60910170/158376639-27736508-f1c3-4a17-9cd0-669e34fab2d0.png)  
+8. Gantt Chart:  
   ![image](https://user-images.githubusercontent.com/60910170/158161759-33271add-f897-46e7-9fd7-3daa9173b78f.png)
