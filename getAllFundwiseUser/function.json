@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"],
+      "route": "users"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "getAllUsers",
+      "type": "cosmosDB",
+      "databaseName": "main-db",
+      "collectionName": "fundwise-dev",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDBConnString",
+      "direction": "in",
+      "sqlQuery": "select * from User"
+    }
+  ]
+}
