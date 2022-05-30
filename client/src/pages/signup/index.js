@@ -30,7 +30,7 @@ export default function Signup() {
     try {
       console.log(process.env.NEXT_PUBLIC_ENDPOINT_URL);
       axios
-        .post(process.env.NEXT_PUBLIC_ENDPOINT_URL + "auth/signup", signinInput)
+        .post(process.env.NEXT_PUBLIC_ENDPOINT_URL + "/auth/signup", signinInput)
         .then((respons) => {
           if (respons.data) {
             toast.success("Successfully Sign Up!");

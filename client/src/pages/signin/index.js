@@ -29,7 +29,7 @@ export default function Signin() {
     try {
       console.log(process.env.NEXT_PUBLIC_ENDPOINT_URL);
       axios
-        .post(process.env.NEXT_PUBLIC_ENDPOINT_URL + "auth/signin", loginInput)
+        .post(process.env.NEXT_PUBLIC_ENDPOINT_URL + "/auth/signin", loginInput)
         .then((respons) => {
           console.log(respons.data);
           dispatch(authLogin(respons.data));

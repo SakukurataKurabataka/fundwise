@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { DashboardLayout } from "../components/Layout";
 
 import { UploadReceipt } from "../components/uploadReceipt";
 
@@ -22,3 +23,9 @@ export default function Home() {
     </div>
   );
 }
+
+// Home.layout = (content) => (
+//   <DashboardLayout>
+//     {content}
+//   </DashboardLayout>
+// )
