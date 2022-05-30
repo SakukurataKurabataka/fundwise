@@ -18,7 +18,6 @@ export default function Signup() {
   });
   const router = useRouter();
   const authAccount = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     setSigninInput((prev) => ({
@@ -34,13 +33,13 @@ export default function Signup() {
         .post(process.env.NEXT_PUBLIC_ENDPOINT_URL + "auth/signup", signinInput)
         .then((respons) => {
           if (respons.data) {
-            toast.success("Successfully SignUp!");
-            setTimeout(500);
+            toast.success("Successfully Sign Up!");
+            setTimeout(1000);
             router.push("/signin");
           }
         })
         .catch((err) => {
-          toast.error("Error When SignUp!");
+          toast.error("Error when Sign Up!");
 
           console.log(err);
         });
