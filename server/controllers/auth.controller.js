@@ -34,9 +34,6 @@ exports.signin = (req, res) => {
       return;
     }
 
-    console.log(req.body)
-    console.log(user)
-
     if (!user) {
       return res.status(404).send({ message: "User Not found." });
     }

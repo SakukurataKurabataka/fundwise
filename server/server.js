@@ -11,7 +11,6 @@ dotenv.config({ path: "./config/config.env" });
 var corsOptions = {
   origin: ['http://localhost:8080', 'http://localhost:8081', 'http://localhost:3000'],
   optionsSuccessStatus: 200, // For legacy browser support
-  methods: "GET, PUT, POST, DELETE, PATCH"
 };
 app.use(cors(corsOptions));
 
@@ -41,3 +40,4 @@ app.listen(PORT, () => {
 // Add Routes
 require('./routes/auth.routes')(app);
 require('./routes/ocr.routes')(app);
+require('./routes/expense.routes')(app);
