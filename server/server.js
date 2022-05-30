@@ -9,16 +9,18 @@ const connectDB = require("./config/db");
 dotenv.config({ path: "./config/config.env" });
 
 var corsOptions = {
-  origin: "http://localhost:8081",
+  origin: ['http://localhost:8080', 'http://localhost:8081', 'http://localhost:3000'],
+  optionsSuccessStatus: 200, // For legacy browser support
+  methods: "GET, PUT, POST, DELETE, PATCH"
 };
 app.use(cors(corsOptions));
-// parse requests of content-type - application/json
-app.use(express.json());
 
 connectDB();
 
+// parse requests of content-type - application/json
+app.use(express.json({limit: '4mb'}));
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({limit: '4mb', extended: true, parameterLimit: 50000}));
 app.use(
   cookieSession({
     name: "fundwise-session",
@@ -38,3 +40,4 @@ app.listen(PORT, () => {
 
 // Add Routes
 require('./routes/auth.routes')(app);
+require('./routes/ocr.routes')(app);
