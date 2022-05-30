@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -14,7 +14,7 @@ export default function Signin() {
     email: "",
     password: "",
   });
-  const router = useRouter()
+  const router = useRouter();
   const authAccount = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
@@ -35,7 +35,7 @@ export default function Signin() {
           dispatch(authLogin(respons.data));
 
           if (respons.data) {
-            router.push('/')
+            router.push("/");
           }
         })
         .catch((err) => {
@@ -116,12 +116,12 @@ export default function Signin() {
             <p className="mb-2">
               Fill up personal information and start journey with us.
             </p>
-            <a
-              href="#"
+            <Link
+              href="/signup"
               className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:bg-white hover:text-green-500"
             >
               Sign Up
-            </a>
+            </Link>
           </div>
           {/* Sign up section */}
         </div>
