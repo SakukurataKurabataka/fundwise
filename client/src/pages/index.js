@@ -7,25 +7,25 @@ import { DashboardLayout } from "../components/Layout";
 import { UploadReceipt } from "../components/uploadReceipt";
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
   const authAccount = useSelector((state) => state.auth);
 
   useEffect(() => {
-    if(!authAccount.id){
-      router.push('/signin')
+    if (!authAccount.id) {
+      router.push("/signin");
     }
-  }, [])
-  
+  }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center  py-2">
-      <UploadReceipt />
-    </div>
+    <section className=" container flex flex-col items-center justify-center p-8">
+      <div className="w-full">
+        <h1 className="text-4xl font-bold mb-4">Pengeluaran</h1>
+        <UploadReceipt />
+      </div>
+    </section>
   );
 }
 
-// Home.layout = (content) => (
-//   <DashboardLayout>
-//     {content}
-//   </DashboardLayout>
-// )
+Home.getLayout = function getLayout(page) {
+  return <DashboardLayout>{page}</DashboardLayout>;
+};

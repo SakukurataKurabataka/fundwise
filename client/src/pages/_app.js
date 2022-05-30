@@ -5,12 +5,12 @@ import { Toaster } from "react-hot-toast";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  const layout = Component.layout ?? ((page) => page);
+  const getLayout = Component.getLayout || ((page) => page)
 
   return (
     <Provider store={store}>
       <Toaster position="top-center" reverseOrder={false} />
-      {layout(<Component {...pageProps} />)}
+      {getLayout(<Component {...pageProps} />)}
     </Provider>
   );
 }

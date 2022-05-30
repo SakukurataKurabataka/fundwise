@@ -5,6 +5,22 @@ module.exports = function (app) {
     next();
   });
 
+  app.get("/api/expense", async (req, res) => {
+    const { userId } = req.body;
+
+    try {
+      const queryExpenses = await controller.getAllExpensesByUserID(userId);
+
+      if (!queryExpenses) {
+        res.status(500).send({ message: "Failed to Fetch Expenses" });
+      }
+
+      res.send(queryExpenses);
+    } catch (err) {
+      res.send({ message: err });
+    }
+  });
+
   app.post("/api/expense", async (req, res) => {
     const { userId, expenseDate, title, amount } = req.body;
 
