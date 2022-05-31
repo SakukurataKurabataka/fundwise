@@ -61,3 +61,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3F6FD86F6EA34A1CAB25158383B66EC3 }}
           package: .
+
+      - name: delete leftover artifact
+        run: rm release.zip
