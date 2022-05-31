@@ -31,7 +31,7 @@ export default function Home() {
         <h2 className="text-md font-bold">
           Hallo, {authAccount.name.split(" ")[0]}
         </h2>
-        <h1 className="text-4xl font-bold mb-4">Pengeluaran</h1>
+        <h1 className="text-3xl font-bold mb-4">Selamat datang di Fundwise</h1>
         <div>
           <UploadReceipt
             className="mx-auto mb-8"

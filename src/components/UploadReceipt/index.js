@@ -15,7 +15,7 @@ export const UploadReceipt = ({ receiptData, setReceiptData, className }) => {
         setIsLoading(() => true);
         axios
           .post(
-            "http://localhost:8080/api/receiptAnalyzer",
+            process.env.NEXT_PUBLIC_ENDPOINT_URL + "/receiptAnalyzer",
             { imageString: e.target.result },
             {
               headers: {
