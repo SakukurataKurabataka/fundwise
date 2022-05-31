@@ -6,7 +6,7 @@ import { InputExpense } from "../components/InputExpenses";
 import { DashboardLayout } from "../components/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { UploadReceipt } from "../components/uploadReceipt";
+import { UploadReceipt } from "../components/UploadReceipt";
 
 // Import Swiper styles
 import "swiper/css";
