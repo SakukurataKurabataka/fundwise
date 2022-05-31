@@ -46,7 +46,7 @@ export default function Home() {
           >
             {receiptData.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <InputExpense
                     title={item.properties.description.value}
                     amount={item.properties.totalPrice.value}
