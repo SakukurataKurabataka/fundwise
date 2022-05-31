@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { FaPlusCircle } from "react-icons/fa";
 
-export const UploadReceipt = ({ className }) => {
+export const UploadReceipt = ({ receiptData, setReceiptData, className }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleInputChange = (e) => {
     let reader = new FileReader();
     let image64 = 0;
@@ -10,7 +12,7 @@ export const UploadReceipt = ({ className }) => {
       reader.readAsDataURL(e.target.files[0]);
       reader.onload = (e) => {
         console.log(e.target.result);
-
+        setIsLoading(() => true);
         axios
           .post(
             "http://localhost:8080/api/receiptAnalyzer",
@@ -22,8 +24,21 @@ export const UploadReceipt = ({ className }) => {
               },
             }
           )
-          .then((data) => {
-            console.log(data);
+          .then((respons) => {
+            console.log(respons);
+
+            const receiptValue = respons.data.values;
+            console.log(typeof receiptValue);
+            console.log("from uploadreceipt");
+            console.log(receiptValue);
+            setReceiptData(() => receiptValue);
+            setIsLoading(() => false);
+          })
+          .catch((err) => {
+            {
+              console.log(err);
+              setIsLoading(() => false);
+            }
           });
       };
     }
@@ -31,7 +46,7 @@ export const UploadReceipt = ({ className }) => {
 
   return (
     <div
-      className={`border-4 border-gray-600 rounded-lg h-80 w-80 relative flex items-center justify-center cursor-pointer ${className}`}
+      className={`border-4 flex flex-col relative border-gray-600 rounded-lg h-80 w-80 items-center justify-center cursor-pointer ${className}`}
     >
       <input
         type="file"
@@ -40,6 +55,13 @@ export const UploadReceipt = ({ className }) => {
         onChange={handleInputChange}
       />
       <FaPlusCircle className="w-9 h-9" />
+      <h2 className="font-bold text-xl">Import Nota</h2>
+
+      {isLoading && (
+        <div className="w-full h-full absolute bg-gray-400 opacity-50">
+          <p>Loading...</p>
+        </div>
+      )}
     </div>
   );
 };
