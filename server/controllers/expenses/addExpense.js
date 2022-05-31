@@ -22,6 +22,8 @@ module.exports = addExpense = async (userId, expenseDate, title, amount) => {
     throw new Error("No Amount Given");
   }
 
+  console.log(user);
+
   const expense = new Expense({
     expenseDate,
     title,

@@ -5,8 +5,8 @@ module.exports = function (app) {
     next();
   });
 
-  app.get("/api/expense", async (req, res) => {
-    const { userId } = req.body;
+  app.get("/api/expense/:id", async (req, res) => {
+    const userId = req.params.id;
 
     try {
       const queryExpenses = await controller.getAllExpensesByUserID(userId);

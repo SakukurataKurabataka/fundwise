@@ -13,8 +13,6 @@ module.exports = async function receiptOCR(imageString) {
   const apiKey = "a143b32d9ba747f8b927d3f5d2be7db1";
   var b64string = imageString;
 
-  console.log(imageString)
-
   const decodedimage = base64ToImage(b64string, "./middlewares/azure/");
 
   const readStream = fs.createReadStream(
